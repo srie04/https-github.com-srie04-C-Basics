@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+    <Compile Remove="Program2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Program.cs" />
+    <None Include="Program2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="4.21.0" />
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="125.0.2535.79" />
+    <PackageReference Include="WebDriverManager" Version="2.17.2" />
+  </ItemGroup>
+
+</Project>
